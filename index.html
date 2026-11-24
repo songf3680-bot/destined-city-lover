@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#F6F1E7" />
+  <title>测测你的宿命恋人在哪个城市 · 中国地理趣味人格测试</title>
+  <meta name="description" content="40道生活化趣味人格选择题，依据中国地理十六城风物气质，测测与你灵魂同频的宿命恋人藏在哪座城市。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 宣纸纹理与山水氛围背景 -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="paper-grain"></div>
+    <svg class="mountain-backdrop" viewBox="0 0 1440 420" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="mistGrad1" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#6B837F" stop-opacity="0.16" />
+          <stop offset="100%" stop-color="#F6F1E7" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="mistGrad2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#8A6E4B" stop-opacity="0.12" />
+          <stop offset="100%" stop-color="#F6F1E7" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+      <path d="M0,260 C180,150 320,210 510,165 C690,122 820,220 1030,145 C1210,80 1350,155 1440,120 L1440,420 L0,420 Z" fill="url(#mistGrad1)" />
+      <path d="M0,310 C220,230 410,290 640,220 C870,150 1060,265 1270,210 C1360,185 1410,215 1440,200 L1440,420 L0,420 Z" fill="url(#mistGrad2)" />
+    </svg>
+  </div>
+
+  <main class="app-shell">
+    <!-- ==================== 1. 测试首页 ==================== -->
+    <section id="view-home" class="view view-home is-active" aria-labelledby="home-title">
+      <div class="guofeng-frame home-card">
+        <span class="corner tl" aria-hidden="true"></span>
+        <span class="corner tr" aria-hidden="true"></span>
+        <span class="corner bl" aria-hidden="true"></span>
+        <span class="corner br" aria-hidden="true"></span>
+
+        <div class="home-top-meta">
+          <span class="meta-tag">中国地理 · 山河寻缘图谱</span>
+          <span class="meta-dot" aria-hidden="true"></span>
+          <span class="meta-tag">趣味人格测试</span>
+        </div>
+
+        <div class="home-emblem" aria-hidden="true">
+          <svg viewBox="0 0 120 120" class="compass-svg">
+            <circle cx="60" cy="60" r="54" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 4" opacity="0.5" />
+            <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.8" />
+            <path d="M60 12 L64 54 L108 60 L64 66 L60 108 L56 66 L12 60 L56 54 Z" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.7" />
+            <circle cx="60" cy="60" r="14" fill="#A8322D" opacity="0.92" />
+            <text x="60" y="64.5" text-anchor="middle" fill="#FCF9F3" font-size="13" font-family="Songti SC, Noto Serif SC, serif">缘</text>
+          </svg>
+        </div>
+
+        <div class="home-title-wrap">
+          <p class="home-kicker">山川湖海各有意气 · 人间烟火自有归期</p>
+          <h1 id="home-title" class="home-title">测测你的宿命恋人<br />在哪个城市</h1>
+          <div class="title-seal" aria-hidden="true">山河有信</div>
+        </div>
+
+        <p class="home-lead">
+          每一座中国城市，都有自己独一无二的性格与爱意表达方式。通过 <strong>40 道生活化日常切片</strong>，从晨昏习惯、处事方圆、社交距离、情绪潮汐到风物偏爱，推演与你灵魂最同频的那座宿命之城。
+        </p>
+
+        <div class="home-metrics" role="list">
+          <div class="metric-item" role="listitem">
+            <span class="metric-num">40</span>
+            <span class="metric-label">道生活单选题</span>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric-item" role="listitem">
+            <span class="metric-num">6</span>
+            <span class="metric-label">大性格维度</span>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric-item" role="listitem">
+            <span class="metric-num">16</span>
+            <span class="metric-label">座中国风物城</span>
+          </div>
+        </div>
+
+        <div class="chapter-preview" aria-label="测试五卷概览">
+          <span class="chapter-chip">卷一 · 晨昏日常</span>
+          <span class="chapter-chip">卷二 · 处事方圆</span>
+          <span class="chapter-chip">卷三 · 浮生清欢</span>
+          <span class="chapter-chip">卷四 · 心海潮汐</span>
+          <span class="chapter-chip">卷五 · 风物偏爱</span>
+        </div>
+
+        <div class="home-actions">
+          <button id="btn-start" type="button" class="btn btn-primary btn-lg">
+            <span>开启山河寻缘</span>
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M4 10H16M11 5L16 10L11 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button id="btn-resume" type="button" class="btn btn-outline hidden">
+            继续上次作答（第 <span id="resume-q-num">1</span> 题）
+          </button>
+        </div>
+
+        <p class="home-footnote">
+          约需 3–4 分钟 · 凭第一直觉作答最准 · 趣味人格探索，非地理考试或专业心理诊断
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== 2. 逐题作答页 ==================== -->
+    <section id="view-quiz" class="view view-quiz" aria-live="polite">
+      <header class="quiz-header">
+        <div class="quiz-header-top">
+          <div class="quiz-chapter-info">
+            <span id="quiz-chapter-numeral" class="chapter-badge">卷一</span>
+            <span id="quiz-chapter-title" class="chapter-name">晨昏日常</span>
+          </div>
+          <div class="quiz-counter" aria-label="当前答题进度">
+            <span id="quiz-current-num" class="counter-current">01</span>
+            <span class="counter-sep">/</span>
+            <span class="counter-total">40</span>
+          </div>
+        </div>
+
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="40" aria-valuenow="1" id="quiz-progressbar">
+          <div id="quiz-progress-fill" class="progress-fill" style="width: 2.5%"></div>
+          <div class="progress-milestones" aria-hidden="true">
+            <span class="milestone is-reached" data-chapter="1" title="卷一·晨昏日常"></span>
+            <span class="milestone" data-chapter="2" title="卷二·处事方圆"></span>
+            <span class="milestone" data-chapter="3" title="卷三·浮生清欢"></span>
+            <span class="milestone" data-chapter="4" title="卷四·心海潮汐"></span>
+            <span class="milestone" data-chapter="5" title="卷五·风物偏爱"></span>
+          </div>
+        </div>
+        <p id="quiz-chapter-subtitle" class="chapter-subtitle">日常习惯 · 藏在琐碎里的生活底色</p>
+      </header>
+
+      <div id="question-stage" class="question-stage">
+        <article id="question-card" class="guofeng-frame question-card">
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+
+          <div class="question-meta">
+            <span id="question-category" class="category-pill">日常习惯</span>
+            <span id="question-ordinal" class="ordinal-text">第 01 题</span>
+          </div>
+
+          <h2 id="question-text" class="question-text">题目加载中…</h2>
+
+          <div id="options-list" class="options-list" role="radiogroup" aria-labelledby="question-text">
+            <!-- 动态注入四个选项 -->
+          </div>
+        </article>
+      </div>
+
+      <footer class="quiz-footer">
+        <button id="btn-prev" type="button" class="btn btn-ghost" disabled>
+          <svg class="btn-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M16 10H4M9 5L4 10L9 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>上一题</span>
+        </button>
+
+        <span class="keyboard-hint">键盘 1–4 / A–D 可快捷选择</span>
+
+        <button id="btn-back-home" type="button" class="btn btn-text">返回首页</button>
+      </footer>
+    </section>
+
+    <!-- ==================== 3. 山河推演过渡页 ==================== -->
+    <section id="view-calculating" class="view view-calculating" aria-live="polite">
+      <div class="calculating-box">
+        <div class="seal-spinner" aria-hidden="true">
+          <svg viewBox="0 0 160 160" class="spinner-svg">
+            <circle cx="80" cy="80" r="70" fill="none" stroke="#B99153" stroke-width="1.2" stroke-dasharray="6 6" class="spin-slow" />
+            <circle cx="80" cy="80" r="54" fill="none" stroke="#A8322D" stroke-width="1.4" stroke-dasharray="28 14" class="spin-reverse" />
+            <rect x="54" y="54" width="52" height="52" rx="6" fill="#A8322D" />
+            <text x="80" y="88" text-anchor="middle" fill="#FCF9F3" font-size="24" font-family="Songti SC, Noto Serif SC, serif">推演</text>
+          </svg>
+        </div>
+        <h2 class="calc-title">正在推演你的宿命之城</h2>
+        <p id="calc-status" class="calc-status">正在梳理四十重生活微光…</p>
+      </div>
+    </section>
+
+    <!-- ==================== 4. 结果展示页（适配小红书/朋友圈截图） ==================== -->
+    <section id="view-result" class="view view-result" aria-labelledby="res-city-name">
+      <!-- 顶部快捷栏 -->
+      <div class="result-topbar">
+        <span class="result-topbar-label">山河寻缘结果已揭晓 · 适合直接截图分享</span>
+        <button id="btn-atlas-top" type="button" class="btn btn-text">查看十六城图鉴</button>
+      </div>
+
+      <!-- 主结果卡片：专为截图打造的高级国风海报视觉 -->
+      <article id="result-poster-card" class="guofeng-frame result-hero-card">
+        <span class="corner tl" aria-hidden="true"></span>
+        <span class="corner tr" aria-hidden="true"></span>
+        <span class="corner bl" aria-hidden="true"></span>
+        <span class="corner br" aria-hidden="true"></span>
+
+        <div class="hero-header">
+          <span class="hero-brand">宿命恋人图谱 · 中国地理</span>
+          <span id="res-coords" class="hero-coords">30°39′N · 104°04′E</span>
+        </div>
+
+        <div class="hero-main">
+          <div class="hero-city-col">
+            <div class="hero-region-row">
+              <span id="res-geozone" class="geozone-badge">西南</span>
+              <span id="res-region" class="region-text">四川 · 巴蜀盆地</span>
+            </div>
+            <p class="hero-pretitle">你的宿命恋人藏在</p>
+            <div class="hero-name-line">
+              <h1 id="res-city-name" class="hero-city-name">成都</h1>
+              <span id="res-seal" class="city-seal">安逸巴蜀</span>
+            </div>
+            <p id="res-pinyin" class="hero-pinyin">CHENGDU</p>
+            <p id="res-archetype" class="hero-archetype">松弛烟火里的温柔生活家</p>
+          </div>
+
+          <div class="hero-visual-col">
+            <div id="res-emblem" class="city-emblem-wrap" aria-hidden="true">
+              <!-- 动态生成城市风物纹样 SVG -->
+            </div>
+            <div class="match-score-pill">
+              <span class="match-score-label">灵魂契合度</span>
+              <strong id="res-match-pct" class="match-score-value">94%</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- 专属有记忆点文案 -->
+        <blockquote class="hero-quote">
+          <p id="res-quote">“别人教你赶路，而成都的宿命恋人，会牵起你在银杏树下喝茶看云，告诉你慢一点也没关系。”</p>
+        </blockquote>
+
+        <!-- 匹配的性格特点 -->
+        <div class="hero-traits-block">
+          <div class="section-mini-label">
+            <span class="mini-line"></span>
+            <span>匹配的性格特点</span>
+            <span class="mini-line"></span>
+          </div>
+          <div id="res-traits" class="traits-grid">
+            <!-- 动态注入标签 -->
+          </div>
+        </div>
+      </article>
+
+      <!-- 六维灵魂图谱（SVG雷达图 + 维度条） -->
+      <section class="guofeng-frame result-section radar-section">
+        <div class="section-head">
+          <div>
+            <p class="section-en">SOUL DIMENSIONS</p>
+            <h2 class="section-title">你的六维恋爱气质图谱</h2>
+          </div>
+          <div class="radar-legend">
+            <span class="legend-item"><i class="dot dot-user"></i>你的维度</span>
+            <span class="legend-item"><i class="dot dot-city"></i><span id="legend-city-name">成都</span>气场</span>
+          </div>
+        </div>
+
+        <div class="radar-layout">
+          <div class="radar-chart-wrap">
+            <svg id="radar-svg" viewBox="0 0 320 300" class="radar-svg" role="img" aria-label="六维性格雷达图"></svg>
+          </div>
+          <div id="dimension-bars" class="dimension-bars">
+            <!-- 动态注入维度条 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 深度解读：匹配理由 + 隐藏优势 -->
+      <div class="editorial-grid">
+        <section class="guofeng-frame result-section">
+          <div class="section-head compact">
+            <span class="section-num">壹</span>
+            <div>
+              <p class="section-en">WHY THIS CITY</p>
+              <h2 class="section-title">匹配理由 · 为何是TA</h2>
+            </div>
+          </div>
+          <p id="res-match-reason" class="editorial-body"></p>
+        </section>
+
+        <section class="guofeng-frame result-section">
+          <div class="section-head compact">
+            <span class="section-num">贰</span>
+            <div>
+              <p class="section-en">HIDDEN STRENGTH</p>
+              <h2 class="section-title">隐藏优势 · 你的高光</h2>
+            </div>
+          </div>
+          <p id="res-hidden-strength" class="editorial-body"></p>
+        </section>
+      </div>
+
+      <!-- 趣味彩蛋 -->
+      <section class="guofeng-frame result-section easter-section">
+        <div class="section-head compact">
+          <span class="section-num">叁</span>
+          <div>
+            <p class="section-en">DESTINY EASTER EGG</p>
+            <h2 class="section-title">趣味彩蛋 · 宿命偶遇剧本</h2>
+          </div>
+        </div>
+
+        <div class="easter-grid">
+          <div class="easter-card">
+            <span class="easter-tag">初见名场面</span>
+            <p id="res-egg-scene" class="easter-text"></p>
+          </div>
+          <div class="easter-card">
+            <span class="easter-tag">城市定情信物</span>
+            <p id="res-egg-token" class="easter-text"></p>
+          </div>
+          <div class="easter-card easter-card-code">
+            <span class="easter-tag">宿命心动暗号</span>
+            <p id="res-egg-code" class="easter-text easter-code-text"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 平行时空备选城 -->
+      <section class="guofeng-frame result-section runnerup-section">
+        <div class="runnerup-inner">
+          <div class="runnerup-copy">
+            <h3 class="runnerup-title">平行时空心动备选城</h3>
+            <p class="runnerup-desc">除了你的宿命主城，这两座城市同样与你的灵魂频率高度共振：</p>
+          </div>
+          <div id="res-runnerups" class="runnerup-chips">
+            <!-- 动态注入2个备选城 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 底部操作与分享栏 -->
+      <div class="result-actions">
+        <button id="btn-poster" type="button" class="btn btn-primary btn-lg">
+          <span>生成小红书 / 朋友圈分享海报</span>
+        </button>
+        <div class="result-actions-secondary">
+          <button id="btn-copy-share" type="button" class="btn btn-outline">复制分享文案</button>
+          <button id="btn-atlas" type="button" class="btn btn-outline">十六城风物图鉴</button>
+          <button id="btn-retest" type="button" class="btn btn-ghost">重新测试</button>
+        </div>
+      </div>
+
+      <footer class="result-footer">
+        <p>《测测你的宿命恋人在哪个城市》 · 中国地理十六城趣味人格图谱</p>
+      </footer>
+    </section>
+  </main>
+
+  <!-- ==================== 弹窗：高清分享海报预览与下载 ==================== -->
+  <div id="modal-poster" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-poster-title" hidden>
+    <div class="modal-backdrop" data-close-modal="modal-poster"></div>
+    <div class="modal-dialog modal-poster-dialog">
+      <div class="modal-head">
+        <h3 id="modal-poster-title">专属分享海报（3:4 适配小红书/朋友圈）</h3>
+        <button type="button" class="modal-close" data-close-modal="modal-poster" aria-label="关闭弹窗">✕</button>
+      </div>
+      <div class="modal-body poster-preview-body">
+        <p class="poster-tip">手机端可直接长按下方图片保存，电脑端点击下方按钮一键下载高清 PNG</p>
+        <div class="poster-image-frame">
+          <img id="poster-preview-img" alt="宿命恋人城市测试结果分享海报" />
+        </div>
+        <canvas id="poster-canvas" width="1080" height="1440" hidden></canvas>
+      </div>
+      <div class="modal-foot">
+        <button id="btn-download-poster" type="button" class="btn btn-primary">下载高清海报 PNG</button>
+        <button type="button" class="btn btn-ghost" data-close-modal="modal-poster">关闭</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 弹窗：十六城图鉴 ==================== -->
+  <div id="modal-atlas" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-atlas-title" hidden>
+    <div class="modal-backdrop" data-close-modal="modal-atlas"></div>
+    <div class="modal-dialog modal-atlas-dialog">
+      <div class="modal-head">
+        <h3 id="modal-atlas-title">中国地理 · 十六城宿命图鉴</h3>
+        <button type="button" class="modal-close" data-close-modal="modal-atlas" aria-label="关闭弹窗">✕</button>
+      </div>
+      <div id="atlas-content" class="modal-body atlas-body">
+        <!-- 动态生成全部16城卡片 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 轻提示 Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
