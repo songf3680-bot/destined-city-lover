@@ -880,11 +880,16 @@
       ctx.fillText(line, 134, 1232 + idx * 38);
     });
 
-    // 9. 页脚署名
+    // 9. 页脚署名与右下角淡淡水印
     ctx.fillStyle = '#7C8482';
     ctx.textAlign = 'center';
     ctx.font = '400 21px "PingFang SC", "Microsoft YaHei", sans-serif';
-    ctx.fillText('40道生活切片 · 16座中国地理风物城 · 测测你的宿命恋人在哪个城市', W / 2, 1348);
+    ctx.fillText('40道生活切片 · 16座中国地理风物城 · 测测你的宿命恋人在哪个城市', W / 2, 1344);
+
+    ctx.fillStyle = 'rgba(124, 132, 130, 0.38)';
+    ctx.textAlign = 'right';
+    ctx.font = '400 20px "Songti SC", "Noto Serif SC", Georgia, serif';
+    ctx.fillText('songfeng', W - 86, H - 76);
 
     return canvas.toDataURL('image/png');
   }
