@@ -746,7 +746,7 @@ button {
 
 /* 结果主卡（专为小红书/朋友圈截图设计） */
 .result-hero-card {
-  padding: 28px 30px 30px;
+  padding: 28px 30px 40px;
   background-color: var(--bg-card);
   background:
     radial-gradient(circle at 86% 16%, color-mix(in srgb, var(--city-accent) 13%, transparent), transparent 44%),
@@ -1460,6 +1460,32 @@ button {
   to { opacity: 1; transform: translate(-50%, 0); }
 }
 
+/* ==================== 右下角淡淡水印 ==================== */
+.site-watermark {
+  position: fixed;
+  right: 18px;
+  bottom: 14px;
+  z-index: 40;
+  pointer-events: none;
+  user-select: none;
+  font-family: var(--font-serif);
+  font-size: 0.76rem;
+  letter-spacing: 0.18em;
+  color: rgba(72, 84, 87, 0.34);
+}
+
+.card-watermark {
+  position: absolute;
+  right: 22px;
+  bottom: 14px;
+  pointer-events: none;
+  user-select: none;
+  font-family: var(--font-serif);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: rgba(124, 132, 130, 0.36);
+}
+
 /* ==================== 响应式断点（平板与手机） ==================== */
 @media (max-width: 720px) {
   .app-shell {
@@ -1500,7 +1526,7 @@ button {
   }
 
   .result-hero-card {
-    padding: 22px 18px 24px;
+    padding: 22px 18px 38px;
   }
 
   .hero-main {
